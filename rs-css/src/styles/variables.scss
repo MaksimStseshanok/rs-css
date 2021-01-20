@@ -1,0 +1,62 @@
+$font-size: calc(7px + 13 * (100vw / 1280));
+$font-color: #2e3f3e;
+$title-color: #5e5373;
+$code-color: #f5d67b;
+$code-text: #72e0d1;
+$code-comments: #5e7671;
+$body-bg: rgba(156, 39, 176, 0.2);
+$code-bg-dark: rgba(32, 28, 41, 0.9);
+$code-bg-light: rgba(32, 28, 41, 0.1);
+$code-white: rgba(255, 255, 255, 0.5);
+$bg-gradient: linear-gradient(-45deg, #5e7671, #5e5373, #2e3f3e);
+
+@mixin transition {
+  transition: all 0.4s ease;
+}
+@mixin overlay {
+  transition: all 0.75s ease-out;
+}
+@mixin overlayTitle {
+  transition: all 1s ease-out;
+}
+
+@keyframes move {
+  100% {
+    transform: translateY(-1px);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  0% {
+    transform: translateY(-1px);
+  }
+}
+
+@keyframes blink {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+  33% {
+    transform: scale(0.6);
+  }
+  66% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+$tablet: 767px;

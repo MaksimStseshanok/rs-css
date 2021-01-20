@@ -1,0 +1,47 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  padding: 5px;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+pre {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  max-width: 5rem;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+:focus::placeholder {
+  color: transparent;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
